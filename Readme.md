@@ -1,7 +1,7 @@
 # Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Павел Корчагин](https://up.htmlacademy.ru/adaptive/20/user/1058499).
-* Наставник: `Неизвестно`.
+* Наставник: [Алекскей Хабиров](https://htmlacademy.ru/profile/alex_khab).
 
 ---
 
