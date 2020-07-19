@@ -14,18 +14,16 @@
         <h1>
           В путешествие с крутыми попутчиками!
         </h1>
-        <ul class="auth-list">
-          <li class="auth__item">
-            <a href="#" class="auth__button button">
-              Авторизация
-            </a>
-          </li>
-          <li class="auth__item">
+        <a href="#" class="auth__button button">
+          Авторизация
+        </a>
+        <ul class="contacts__list">
+          <li class="contacts__item">
             <a href="tel:8 800 555-86-28" class="tel__button button">
               8 800 555-86-28
             </a>
           </li>
-          <li class="auth__item">
+          <li class="contacts__item">
             <a href="mailto:mail@htmlacademy.ru" class="mail__button button">
               mail@htmlacademy.ru
             </a>
@@ -53,18 +51,16 @@
             </li>
           </ul>
         </nav>
-        <ul class="auth__list">
-          <li class="auth__item">
-            <a href="#" class="auth__button button">
-              Авторизация
-            </a>
-          </li>
-          <li class="auth__item">
+        <a href="#" class="auth__button button">
+          Авторизация
+        </a>
+        <ul class="contacts__list">
+          <li class="contacts__item">
             <a href="tel:8 800 555-86-28" class="tel__button button">
               8 800 555-86-28
             </a>
           </li>
-          <li class="auth__item">
+          <li class="contacts__item">
             <a href="mailto:mail@htmlacademy.ru" class="mail__button button">
               mail@htmlacademy.ru
             </a>
@@ -127,7 +123,7 @@
         Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
       </p>
       <ul class="directions__list">
-        <li class="directions__card">
+        <li class="directions__item directions__card">
           <img src="" width="270" height="110" alt="Изображение направления">
           <div class="directions__info">
             <h3>
@@ -141,7 +137,7 @@
             </span>
           </div>
         </li>
-        <li class="directions__card">
+        <li class="directions__item directions__card">
           <img src="" width="270" height="110" alt="Изображение направления">
           <div class="directions__info">
             <h3>
@@ -155,7 +151,7 @@
             </span>
           </div>
         </li>
-        <li class="directions__card">
+        <li class="directions__item directions__card">
           <img src="" width="270" height="110" alt="Изображение направления">
           <div class="directions__info">
             <h3>
@@ -170,8 +166,180 @@
           </div>
         </li>
       </ul>
+      <a class="directions__button button" href="#">
+        Показать все
+      </a>
     </div>
 
+    <div class="companions">
+      <h2>
+        Попутчики
+      </h2>
+      <p>
+        Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
+      </p>
+      <p>
+        Теперь можно легко найти единомышленников!
+      </p>
+      <ul class="companions__list">
+        <li class="companions__item companions__card">
+          <img src="" width="270" height="270" alt="Изображение попутчика">
+          <div class="companions__info">
+            <ul class="countries__list">
+              <li class="countries__item">
 
+              </li>
+              <li class="countries__item">
+
+              </li>
+              <li class="countries__item">
+
+              </li>
+            </ul>
+            <h3 class="companions__name">
+              Таня Фирсова
+            </h3>
+            <p class="hashtags">
+              #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
+            </p>
+            <ul class="transport__list">
+              <li class="transport__item transport__item--active plane">
+
+              </li>
+              <li class="transport__item bus">
+
+              </li>
+              <li class="transport__item bike">
+
+              </li>
+              <li class="transport__item legs">
+
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="companions__item companions__card">
+          <img src="" width="270" height="270" alt="Изображение попутчика">
+          <div class="companions__info">
+            <ul class="countries__list">
+              <li class="countries__item">
+
+              </li>
+              <li class="countries__item">
+
+              </li>
+            </ul>
+            <h3 class="companions__name">
+              Петя Демин
+            </h3>
+            <p class="hashtags">
+              #бургер #бар #футбол #концерт #крафт
+            </p>
+            <ul class="transport__list">
+              <li class="transport__item transport__item--active plane">
+
+              </li>
+              <li class="transport__item transport__item--active bus">
+
+              </li>
+              <li class="transport__item bike">
+
+              </li>
+              <li class="transport__item transport__item--active legs">
+
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <a class="companions__button button" href="#">
+        Показать всех
+      </a>
+    </div>
+
+    <div class="add-profile">
+      <h2>
+        Добавьте свой профиль
+      </h2>
+      <ol>
+        <li>
+          Базовое размещение
+          Бесплатно
+        </li>
+        <li>
+          Вывод на первых позициях
+          99 руб./мес
+        </li>
+        <li>
+          Кастомный цвет карточки
+          59 руб./мес
+        </li>
+      </ol>
+      <a class="add-profile__show-business" href="#">
+        Показать тарифы для бизнеса
+      </a>
+    </div>
+
+    <div class="auth">
+      <h2>
+        Заинтересовались?
+      </h2>
+      <p>
+        Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a auth__link href="">авторизуйтесь</a>.
+      </p>
+      <form class="auth__form" action="" method="post">
+        <input type="email" name="email" value="E-mail">
+        <input type="submit" name="submit" value="">
+      </form>
+      <p>
+        Остались вопросы?
+        Мы с радостью на них ответим!
+      </p>
+      <ul class="contacts__list">
+        <li class="contacts__item">
+          <a href="tel:8 800 555-86-28" class="tel__button button">
+            8 800 555-86-28
+          </a>
+        </li>
+        <li class="contacts__item">
+          <a href="mailto:mail@htmlacademy.ru" class="mail__button button">
+            mail@htmlacademy.ru
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="address">
+      <address>
+        ул. Большая Конюшенная, 19/8
+      </address>
+      <a href="https://www.google.ru/maps/dir/Большая+Конюшенная+ул.,+19%2F8,+Санкт-Петербург,+191186/Невский+пр.,+Санкт-Петербург/@59.938053,30.3163706,15z/data=!4m14!4m13!1m5!1m1!1s0x4696310fca145cc1:0x42b32648d8238007!2m2!1d30.3230474!2d59.9387165!1m5!1m1!1s0x469631a5e66d51c5:0x6f00589ac258db97!2m2!1d30.3497868!2d59.9325367!3e0">
+        Проложить маршрут
+      </a>
+    </div>
+
+    <footer class="footer">
+      <a class="footer__logo" href="#">
+        <img src="../source/img/logo-mobile-1.svg" width="100" height="15" alt="Логотип Погнали!">
+      </a>
+      <ul class="socials">
+        <li class="socials__item fb">
+
+        </li>
+        <li class="socials__item vk">
+
+        </li>
+        <li class="socials__item inst">
+
+        </li>
+      </ul>
+      <div class="developed">
+        <p>
+          Разработано
+        </p>
+        <a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive">
+
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
