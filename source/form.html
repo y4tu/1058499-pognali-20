@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Погнали Направления</title>
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="header__menu menu-closed">
+        <h1 class="page__title">Направления</h1>
+        <a class="menu-closed__logo" href="#">
+          <img class="menu-closed__logo-img" src="../source/img/logo-mobile-1.svg" width="100" height="15" alt="Логотип Погнали!">
+        </a>
+        <button class="menu-closed__button button" type="button" name="menu-burger"></button>
+      </div>
+
+      <div class="header__menu menu-opened">
+        <nav class="menu-opened__nav nav">
+          <ul class="nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a href="#">
+                О сервисе
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">
+                Направления
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">
+                Попутчики
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <a href="#" class="menu-opened__auth auth-button button">
+          Авторизация
+        </a>
+        <ul class="menu-opened__contacts contacts-list">
+          <li class="contacts-list__item">
+            <a href="tel:8 800 555-86-28" class="contacts-list__button tel-button button">
+              8 800 555-86-28
+            </a>
+          </li>
+          <li class="contacts-list__item">
+            <a href="mailto:mail@htmlacademy.ru" class="contacts-list__button mail-button button">
+              mail@htmlacademy.ru
+            </a>
+          </li>
+        </ul>
+        <ul class="socials">
+          <li class="socials__item fb">
+
+          </li>
+          <li class="socials__item vk">
+
+          </li>
+          <li class="socials__item inst">
+
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="user">
+      <div class="user__level">
+        80 Level
+      </div>
+      <div class="user__photo">
+        <img class="user__img" src="" alt="Аватар пользователя">
+      </div>
+      <a class="user__button button" href="#">
+        Сменить фото
+      </a>
+      <fieldset class="hashtags">
+        <legend class="hashtags__title">Теги</legend>
+        <input class="hashtags__input" type="textarea" name="hashtags" value="#бургер #бар #футбол #концерт #крафт">
+      </fieldset>
+      <fieldset class="transport">
+        <legend class="transport__title">Транспорт</legend>
+        <ul class="transport__list">
+          <li class="transport__item transport__item--active plane">
+
+          </li>
+          <li class="transport__item transport__item--active bus">
+
+          </li>
+          <li class="transport__item bike">
+
+          </li>
+          <li class="transport__item transport__item--active legs">
+
+          </li>
+        </ul>
+      </fieldset>
+    </div>
+
+    <div class="plans">
+      <h2 class="plans__title">
+        Мои планы:
+      </h2>
+      <ol class="plans__list">
+        <li class="plans__item">
+          <h3 class="plans__subtitle">
+            Франция, Италия
+          </h3>
+          <p class="plans__desc">
+            3 попутчика
+            26 мар — 29 мар
+          </p>
+          <a class="plans__link" href="#">
+            Изменить
+          </a>
+        </li>
+        <li class="plans__item">
+          <h3 class="plans__subtitle">
+            Тайланд, Индонезия
+          </h3>
+          <p class="plans__desc">
+            1 попутчик
+            1 июл — 15 июл
+          </p>
+          <a class="plans__link" href="#">
+            Изменить
+          </a>
+        </li>
+      </ol>
+    </div>
+    <section class="add-plan steps">
+      <h2 class="steps__title">
+        Добавить план:
+      </h2>
+      <div class="steps__switch switch">
+        <input class="switch__radio" type="radio" name="add__radio" value="" checked>
+        <input class="switch__radio" type="radio" name="add__radio" value="">
+        <input class="switch__radio" type="radio" name="add__radio" value="">
+      </div>
+      <div class="step first-step">
+        <h3 class="step__title">
+          Шаг 1.
+          Даты пребывания
+        </h3>
+        <p class="step__text">
+          Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.
+        </p>
+        <form class="step__dates dates" action="index.html" method="post">
+          <label class="dates__label label" for="companions">
+            <span class="dates__desc">Длительность:</span>
+            <span class="dates__desc">Чел.</span>
+          </label>
+          <input class="dates__input input" type="number" name="companions" value="2" id="companions">
+          <label class="dates__label label" for="days">
+            <span class="dates__desc">Ищу попутчиков:</span>
+            <span class="dates__desc">Дн.</span>
+          </label>
+          <input class="dates__input input" type="number" name="days" value="2" id="days">
+          <input class="dates__input input" type="checkbox" name="children" value="" id="children" checked>
+          <label class="dates__label label" for="children">Можно с детьми</label>
+          <input class="dates__input input" type="date" name="date" value="">
+        </form>
+        <a class="step__button button" href="#">Следующий шаг</a>
+      </div>
+      <div class="steps__next step second-step">
+        <h3 class="step__title">
+          Шаг 2.
+          Маршрут
+        </h3>
+        <p class="step__text">
+          Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.
+        </p>
+        <form class="step__form path" action="index.html" method="post">
+          <select class="path__country" name="">
+            <option class="path__option" value="bosnia">
+              Босния и Герцеговина
+            </option>
+            <option class="path__option" value="czech">
+              Чехия
+            </option>
+            <option class="path__option" value="thailand">
+              Тайланд
+            </option>
+            <option class="path__option" value="indonesia">
+              Индонезия
+            </option>
+            <option class="path__option" value="france">
+              Франция
+            </option>
+            <option class="path__option" value="italy">
+              Италия
+            </option>
+          </select>
+          <select class="path__country" name="">
+            <option class="path__option" value="bosnia">
+              Босния и Герцеговина
+            </option>
+            <option class="path__option" value="czech">
+              Чехия
+            </option>
+            <option class="path__option" value="thailand">
+              Тайланд
+            </option>
+            <option class="path__option" value="indonesia">
+              Индонезия
+            </option>
+            <option class="path__option" value="france">
+              Франция
+            </option>
+            <option class="path__option" value="italy">
+              Италия
+            </option>
+          </select>
+          <select class="path__country" name="">
+            <option class="path__option" value="bosnia">
+              Босния и Герцеговина
+            </option>
+            <option class="path__option" value="czech">
+              Чехия
+            </option>
+            <option class="path__option" value="thailand">
+              Тайланд
+            </option>
+            <option class="path__option" value="indonesia">
+              Индонезия
+            </option>
+            <option class="path__option" value="france">
+              Франция
+            </option>
+            <option class="path__option" value="italy">
+              Италия
+            </option>
+          </select>
+          <a class="path__button button" href="#">Добавить страну</a>
+        </form>
+        <a class="step__button button" href="#">Следующий шаг</a>
+        <a class="step__button button" href="#">На шаг назад</a>
+      </div>
+      <div class="steps__next step third-step">
+        <h3 class="step__title">
+          Шаг 3.
+          Развлечения
+        </h3>
+        <p class="step__text">
+          Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.
+        </p>
+        <form class="step__entertainment entertainment" action="index.html" method="post">
+          <fieldset class="entertainment__country country">
+            <label class="country__title" for="entertainment-country-first">
+              Босния и Герцеговина
+            </label>
+            <input class="country__input" type="textarea" name="entertainment" placeholder="План действий" id="entertainment-country-first">
+          </fieldset>
+          <fieldset class="entertainment__country country">
+            <label class="country__title" for="entertainment-country-second">
+              Чехия
+            </label>
+            <input class="country__input" type="textarea" name="entertainment" placeholder="План действий"value="Пить пиво и лазить, по старым замкам, наслаждаться архитектурой и вот это все." id="entertainment-country-second">
+          </fieldset>
+        </form>
+        <a class="step__button button" href="#">Отправить</a>
+        <a class="step__button button" href="#">На шаг назад</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <a class="footer__logo" href="#">
+        <img src="../source/img/logo-mobile-1.svg" width="100" height="15" alt="Логотип Погнали!">
+      </a>
+      <ul class="socials">
+        <li class="socials__item fb">
+
+        </li>
+        <li class="socials__item vk">
+
+        </li>
+        <li class="socials__item inst">
+
+        </li>
+      </ul>
+      <div class="footer__developed developed">
+        <p class="footer__text developed__text">
+          Разработано
+        </p>
+        <a class="footer__link developed__link" href="https://htmlacademy.ru/intensive/adaptive">
+
+        </a>
+      </div>
+    </footer>
+
+    <div class="modal">
+      <div class="modal__country choose-country">
+        <h2 class="choose-country__title">
+          Выберете страну
+        </h2>
+        <button class="cross" type="button" name="modal-close">X</button>
+        <div class="choose-country__letters alphabet">
+          <a href="#" class="alphabet__letter">
+            А
+          </a>
+          <a href="#" class="alphabet__letter active-letter">
+            Б
+          </a>
+          <a href="#" class="alphabet__letter">
+            В
+          </a>
+          <a href="#" class="alphabet__letter">
+            Г
+          </a>
+          <a href="#" class="alphabet__letter">
+            Д
+          </a>
+          <a href="#" class="alphabet__letter">
+            Е
+          </a>
+          <a href="#" class="alphabet__letter">
+            З
+          </a>
+          <a href="#" class="alphabet__letter">
+            И
+          </a>
+          <a href="#" class="alphabet__letter">
+            К
+          </a>
+          <a href="#" class="alphabet__letter">
+            Л
+          </a>
+          <a href="#" class="alphabet__letter">
+            М
+          </a>
+          <a href="#" class="alphabet__letter">
+            Н
+          </a>
+          <a href="#" class="alphabet__letter">
+            О
+          </a>
+          <a href="#" class="alphabet__letter">
+            П
+          </a>
+          <a href="#" class="alphabet__letter">
+            Р
+          </a>
+          <a href="#" class="alphabet__letter">
+            С
+          </a>
+          <a href="#" class="alphabet__letter">
+            Т
+          </a>
+          <a href="#" class="alphabet__letter">
+            У
+          </a>
+          <a href="#" class="alphabet__letter">
+            Ф
+          </a>
+          <a href="#" class="alphabet__letter">
+            Х
+          </a>
+          <a href="#" class="alphabet__letter">
+            Ч
+          </a>
+          <a href="#" class="alphabet__letter">
+            Ш
+          </a>
+          <a href="#" class="alphabet__letter">
+            Щ
+          </a>
+          <a href="#" class="alphabet__letter">
+            Э
+          </a>
+          <a href="#" class="alphabet__letter">
+            Ю
+          </a>
+        </div>
+        <div class="choose-country__list alphabet-list">
+          <a href="#" class="alphabet-list__country">
+            Австралия
+          </a>
+          <a href="#" class="alphabet-list__country">
+            Австрия
+          </a>
+          <a href="#" class="alphabet-list__country">
+            Азербайджан
+          </a>
+          <a href="#" class="alphabet-list__country">
+            Албания
+          </a>
+          <a href="#" class="alphabet-list__country">
+            Алжир
+          </a>
+          <a href="#" class="alphabet-list__country">
+            Ангола
+          </a>
+          <a href="#" class="alphabet-list__country">
+            Андорра
+          </a>
+          <a href="#" class="alphabet-list__country">
+            Антигуа и Барбуда
+          </a>
+          <a href="#" class="alphabet-list__country">
+            Аргентина
+          </a>
+          <a href="#" class="alphabet-list__country">
+            Армения
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
