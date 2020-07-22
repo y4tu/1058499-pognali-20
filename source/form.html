@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Погнали Направления</title>
   </head>
-  <body class="page">
+  <body class="page__body">
     <header class="header">
-      <div class="header__menu menu-closed">
-        <h1 class="page__title">Направления</h1>
-        <a class="menu-closed__logo" href="#">
-          <img class="menu-closed__logo-img" src="../source/img/logo-mobile-1.svg" width="100" height="15" alt="Логотип Погнали!">
+      <div class="header__menu menu menu--closed">
+        <h1 class="menu__title">Направления</h1>
+        <a class="menu__logo" href="#">
+          <img class="menu__logo-img" src="../source/img/logo-mobile-1.svg" width="100" height="15" alt="Логотип Погнали!">
         </a>
-        <button class="menu-closed__button button" type="button" name="menu-burger"></button>
+        <button class="menu__button button" type="button" name="menu-burger"></button>
       </div>
 
-      <div class="header__menu menu-opened">
-        <nav class="menu-opened__nav nav">
+      <div class="header__menu menu">
+        <nav class="menu__nav nav">
           <ul class="nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a href="#">
@@ -34,17 +34,17 @@
             </li>
           </ul>
         </nav>
-        <a href="#" class="menu-opened__auth auth-button button">
+        <a href="#" class="menu__auth auth-button button">
           Авторизация
         </a>
-        <ul class="menu-opened__contacts contacts-list">
-          <li class="contacts-list__item">
-            <a href="tel:8 800 555-86-28" class="contacts-list__button tel-button button">
+        <ul class="menu__contacts contacts">
+          <li class="contacts__item">
+            <a href="tel:8 800 555-86-28" class="contacts__link contacts__link--tel">
               8 800 555-86-28
             </a>
           </li>
-          <li class="contacts-list__item">
-            <a href="mailto:mail@htmlacademy.ru" class="contacts-list__button mail-button button">
+          <li class="contacts__item">
+            <a href="mailto:mail@htmlacademy.ru" class="contacts__link contacts__link--mail">
               mail@htmlacademy.ru
             </a>
           </li>
@@ -63,7 +63,7 @@
       </div>
     </header>
 
-    <div class="user">
+    <section class="user">
       <div class="user__level">
         80 Level
       </div>
@@ -94,9 +94,9 @@
           </li>
         </ul>
       </fieldset>
-    </div>
+    </section>
 
-    <div class="plans">
+    <section class="plans">
       <h2 class="plans__title">
         Мои планы:
       </h2>
@@ -126,7 +126,8 @@
           </a>
         </li>
       </ol>
-    </div>
+    </section>
+
     <section class="add-plan steps">
       <h2 class="steps__title">
         Добавить план:
@@ -287,8 +288,8 @@
       </div>
     </footer>
 
-    <div class="modal">
-      <div class="modal__country choose-country">
+    <section class="modal modal-country">
+      <div class="modal-country__choose choose-country">
         <h2 class="choose-country__title">
           Выберете страну
         </h2>
@@ -403,7 +404,7 @@
           </a>
         </div>
       </div>
-    </div>
+    </section>
 
   </body>
 </html>

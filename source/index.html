@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Погнали</title>
   </head>
-  <body class="page">
+  <body class="page__body">
     <header class="header">
-      <div class="header__menu menu-closed">
-        <a class="menu-closed__logo" href="#">
-          <img class="menu-closed__logo-img" src="../source/img/logo-mobile-1.svg" width="100" height="15" alt="Логотип Погнали!">
+      <div class="header__menu menu">
+        <a class="menu__logo" href="#">
+          <img class="menu__logo-img" src="../source/img/logo-mobile-1.svg" width="100" height="15" alt="Логотип Погнали!">
         </a>
-        <button class="menu-closed__button button" type="button" name="menu-burger"></button>
+        <button class="menu__button button" type="button" name="menu-burger"></button>
       </div>
 
-      <div class="header__menu menu-opened">
-        <nav class="menu-opened__nav nav">
+      <div class="header__menu menu menu--opened">
+        <nav class="menu__nav nav">
           <ul class="nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a href="#">
@@ -33,40 +33,52 @@
             </li>
           </ul>
         </nav>
-        <a href="#" class="menu-opened__auth auth-button button">
+        <a href="#" class="menu__auth auth-button button">
           Авторизация
         </a>
-        <ul class="menu-opened__contacts contacts-list">
-          <li class="contacts-list__item">
-            <a href="tel:8 800 555-86-28" class="contacts-list__button tel-button button">
+        <ul class="menu__contacts contacts">
+          <li class="contacts__item">
+            <a href="tel:8 800 555-86-28" class="contacts__link contacts__link--tel">
               8 800 555-86-28
             </a>
           </li>
-          <li class="contacts-list__item">
-            <a href="mailto:mail@htmlacademy.ru" class="contacts-list__button mail-button button">
+          <li class="contacts__item">
+            <a href="mailto:mail@htmlacademy.ru" class="contacts__link contacts__link--mail">
               mail@htmlacademy.ru
             </a>
           </li>
         </ul>
         <ul class="socials">
           <li class="socials__item fb">
+            <a href=""><svg>
 
+              </svg></a>="socials__link social-id">
+              <svg>
+              </svg>
+            </a>
           </li>
           <li class="socials__item vk">
-
+            <a href="#" aria-label="vkontakte" class="socials__link social-id">
+              <svg>
+              </svg>
+            </a>
           </li>
           <li class="socials__item inst">
-
+            <a href="#" aria-label="instagram" class="socials__link social-id">
+              <svg>
+              </svg>
+            </a>
           </li>
         </ul>
+        <button class="menu__button menu__button--opened button" type="button" name="menu-cross"></button>
       </div>
     </header>
 
-    <div class="promo">
+    <section class="promo">
       <h1 class="visually-hidden">
         Погнали - сайт по поиску попутчиков.
       </h1>
-      <h2>
+      <h2 class="promo__slogan">
         В путешествие с крутыми попутчиками!
       </h2>
       <div class="auth">
@@ -77,23 +89,23 @@
       <div class="contacts">
         <ul class="contacts__list">
           <li class="contacts__item">
-            <a href="tel:8 800 555-86-28" class="contacts__button tel-button button">
+            <a href="tel:8 800 555-86-28" class="contacts__link contacts__link-tel">
               8 800 555-86-28
             </a>
           </li>
           <li class="contacts__item">
-            <a href="mailto:mail@htmlacademy.ru" class="contacts__button mail-button button">
+            <a href="mailto:mail@htmlacademy.ru" class="contacts__link contacts__link-mail">
               mail@htmlacademy.ru
             </a>
           </li>
         </ul>
       </div>
-      <blockquote>
+      <blockquote class="promo__quote quote">
         «Лучшее приложение, что я видел в жизни!»
+        <cite class="quote__author">
+          Мурат Эльтазин главный редактор газеты «гаджетлайф»
+        </cite>
       </blockquote>
-      <cite>
-        Мурат Эльтазин главный редактор газеты «гаджетлайф»
-      </cite>
       <ol class="promo__list">
         <li class="promo__item">
           Выберите направление
@@ -108,9 +120,9 @@
           Путешествуйте вместе!
         </li>
       </ol>
-    </div>
+    </section>
 
-    <div class="about">
+    <section class="about">
       <h2 class="about__title">
         О сервисе
       </h2>
@@ -118,9 +130,9 @@
         Любое путешествие интереснее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.<br>
         А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
       </p>
-    </div>
+    </section>
 
-    <div class="directions">
+    <section class="directions">
       <h2 class="directions__title">
         Направления
       </h2>
@@ -129,7 +141,7 @@
       </p>
       <ul class="directions__list">
         <li class="directions__item directions-card">
-          <img src="" width="270" height="110" alt="Изображение направления">
+          <img class="directions__img" src="" width="270" height="110" alt="Изображение направления">
           <div class="directions-card__info">
             <h3 class="directions-card__title">
               Тайланд
@@ -137,13 +149,13 @@
             <p class="directions-card__text">
               Джунгли зовут!
             </p>
-            <span>
+            <span class="directions-card__count">
               18321
             </span>
           </div>
         </li>
         <li class="directions__item directions-card">
-          <img src="" width="270" height="110" alt="Изображение направления">
+          <img class="directions__img" src="" width="270" height="110" alt="Изображение направления">
           <div  class="directions-card__info">
             <h3  class="directions-card__title">
               Франция
@@ -151,13 +163,13 @@
             <p  class="directions-card__text">
               Трэ бьен, манифик!
             </p>
-            <span>
+            <span class="directions-card__count">
               12518
             </span>
           </div>
         </li>
         <li class="directions__item directions-card">
-          <img src="" width="270" height="110" alt="Изображение направления">
+          <img class="directions__img" src="" width="270" height="110" alt="Изображение направления">
           <div class="directions-card__info">
             <h3  class="directions-card__title">
               Чехия
@@ -165,7 +177,7 @@
             <p class="directions-card__text">
               Закоулки старой Европы
             </p>
-            <span>
+            <span class="directions-card__count">
               5326
             </span>
           </div>
@@ -174,9 +186,9 @@
       <a class="directions__button button" href="#">
         Показать все
       </a>
-    </div>
+    </section>
 
-    <div class="companions">
+    <section class="companions">
       <h2 class="companions__title">
         Попутчики
       </h2>
@@ -185,27 +197,27 @@
         Теперь можно легко найти единомышленников!
       </p>
       <ul class="companions__list">
-        <li class="companions__item companions-card">
+        <li class="companions__item user-card">
           <img src="" width="270" height="270" alt="Изображение попутчика">
-          <div class="companions-card__info">
-            <ul class="companions-card__list countries-list">
-              <li class="countries-list__item">
+          <div class="user-card__info">
+            <ul class="user-card__list flags">
+              <li class="flags__item">
 
               </li>
-              <li class="countries-list__item">
+              <li class="flags__item">
 
               </li>
-              <li class="countries-list__item">
+              <li class="flags__item">
 
               </li>
             </ul>
-            <h3 class="companions-card__name">
+            <h3 class="user-card__name">
               Таня Фирсова
             </h3>
-            <p class="companions-card__text hashtags">
+            <p class="user-card__text hashtags">
               #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
             </p>
-            <ul class="companions-card__list transport-list">
+            <ul class="user-card__list transport-list">
               <li class="transport-list__item transport-list__item--active plane">
 
               </li>
@@ -221,24 +233,24 @@
             </ul>
           </div>
         </li>
-        <li class="companions__item companions-card">
+        <li class="companions__item user-card">
           <img src="" width="270" height="270" alt="Изображение попутчика">
-          <div class="companions-card">
-            <ul class="companions-card__list countries-list">
-              <li class="countries-list__item">
+          <div class="user-card">
+            <ul class="user-card__list flags">
+              <li class="flags__item">
 
               </li>
-              <li class="countries-list__item">
+              <li class="flags__item">
 
               </li>
             </ul>
-            <h3 class="companions-card__name">
+            <h3 class="user-card__name">
               Петя Демин
             </h3>
-            <p class="companions-card__text hashtags">
+            <p class="user-card__text hashtags">
               #бургер #бар #футбол #концерт #крафт
             </p>
-            <ul class="companions-card__list transport-list">
+            <ul class="user-card__list transport-list">
               <li class="transport-list__item transport-list__item--active plane">
 
               </li>
@@ -258,32 +270,32 @@
       <a class="companions__button button" href="#">
         Показать всех
       </a>
-    </div>
+    </section>
 
-    <div class="add-profile">
-      <h2 class="add-profile__title">
+    <section class="tariffs">
+      <h2 class="tariffs__title">
         Добавьте свой профиль
       </h2>
-      <ol class="add-profile__list">
-        <li class="add-profile__item">
+      <ol class="tariffs__list">
+        <li class="tariffs__item">
           Базовое размещение
           Бесплатно
         </li>
-        <li class="add-profile__item">
+        <li class="tariffs__item">
           Вывод на первых позициях
           99 руб./мес
         </li>
-        <li class="add-profile__item">
+        <li class="tariffs__item">
           Кастомный цвет карточки
           59 руб./мес
         </li>
       </ol>
-      <a class="add-profile__show-business" href="#">
+      <a class="tariffs__show-business" href="#">
         Показать тарифы для бизнеса
       </a>
-    </div>
+    </section>
 
-    <div class="auth">
+    <section class="auth">
       <h2 class="auth__title">
         Заинтересовались?
       </h2>
@@ -292,33 +304,34 @@
       </p>
       <form class="auth__form" action="" method="post">
         <input class="auth__input" type="email" name="email" value="E-mail">
-        <input class="auth__input" type="submit" name="submit" value="">
+        <button class="auth__button button" type="submit" name="submit"></button>
       </form>
       <p class="auth__text">
         Остались вопросы?
         Мы с радостью на них ответим!
       </p>
-      <ul class="auth__contacts contacts-list">
-        <li class="contacts-list__item">
-          <a href="tel:8 800 555-86-28" class="contacts-list__button tel-button button">
+      <ul class="auth__contacts contacts">
+        <li class="contacts__item">
+          <a href="tel:8 800 555-86-28" class="contacts__link contacts__link--tel">
             8 800 555-86-28
           </a>
         </li>
-        <li class="contacts-list__item">
-          <a href="mailto:mail@htmlacademy.ru" class="contacts-list__button mail-button button">
+        <li class="contacts__item">
+          <a href="mailto:mail@htmlacademy.ru" class="contacts__link contacts__link--mail">
             mail@htmlacademy.ru
           </a>
         </li>
       </ul>
-    </div>
-    <div class="address">
+    </section>
+
+    <section class="address">
       <address class="address__text">
         ул. Большая Конюшенная, 19/8
       </address>
       <a class="address__link" href="https://www.google.ru/maps/dir/Большая+Конюшенная+ул.,+19%2F8,+Санкт-Петербург,+191186/Невский+пр.,+Санкт-Петербург/@59.938053,30.3163706,15z/data=!4m14!4m13!1m5!1m1!1s0x4696310fca145cc1:0x42b32648d8238007!2m2!1d30.3230474!2d59.9387165!1m5!1m1!1s0x469631a5e66d51c5:0x6f00589ac258db97!2m2!1d30.3497868!2d59.9325367!3e0">
         Проложить маршрут
       </a>
-    </div>
+    </section>
 
     <footer class="footer">
       <a class="footer__logo" href="#">
