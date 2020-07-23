@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Погнали Направления</title>
+  </head>
+  <body class="page__body">
+    <header class="page__header header">
+      <div class="header__menu menu menu--closed">
+        <h1 class="menu__title">Попутчики</h1>
+        <a class="menu__logo" href="#">
+          <img class="menu__logo-img" src="../source/img/logo-mobile-1.svg" width="100" height="15" alt="Логотип Погнали!">
+        </a>
+        <button class="menu__button button" type="button" name="menu-burger"></button>
+      </div>
+
+      <div class="header__menu menu">
+        <nav class="menu__nav nav">
+          <ul class="nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a href="#">
+                О сервисе
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">
+                Направления
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">
+                Попутчики
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <a href="#" class="menu__auth auth-button button">
+          Авторизация
+        </a>
+        <ul class="menu__contacts contacts">
+          <li class="contacts__item">
+            <a href="tel:8 800 555-86-28" class="contacts__link contacts__link--tel">
+              8 800 555-86-28
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a href="mailto:mail@htmlacademy.ru" class="contacts__link contacts__link--mail">
+              mail@htmlacademy.ru
+            </a>
+          </li>
+        </ul>
+        <ul class="socials">
+          <li class="socials__item fb">
+
+          </li>
+          <li class="socials__item vk">
+
+          </li>
+          <li class="socials__item inst">
+
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="page__main main">
+      <section class="main__filter filter">
+        <h2 class="filter__title countries-filter">
+          <a href="#" class="countries-filter__link-open">
+            Фильтрация по странам
+          </a>
+        </h2>
+        <h2 class="filter__title">
+          Подберите идеального попутчика
+        </h2>
+        <form class="filter__form filter-form" action="" method="get">
+          <ul class="filter-form__list">
+            <li class="filter-form__item">
+              <fieldset class="filter-form__fieldset">
+                <legend class="filter-form__legend">
+                  <h3 class="filter-form__item-name">
+                    <a href="" class="filter-form__link">
+                      Хобби
+                    </a>
+                  </h3>
+                </legend>
+              </fieldset>
+            </li>
+            <li class="filter-form__item">
+              <fieldset class="filter-form__fieldset">
+                <legend class="filter-form__legend">
+                  <h3 class="filter-form__item-name">
+                    <a href="" class="filter-form__link">
+                      Музыка
+                    </a>
+                  </h3>
+                </legend>
+                  <input class="filter-form__input" type="checkbox" name="hard-rock" value="" id="hard-rock" checked>
+                  <label class="filter-form__label" for="hard-rock">Тяжелый рок</label>
+                  <input class="filter-form__input" type="checkbox" name="rus-rap" value="" id="rus-rap" checked>
+                  <label class="filter-form__label" for="rus-rap">Русский рэп</label>
+                  <input class="filter-form__input" type="checkbox" name="eurodance" value="" id="eurodance">
+                  <label class="filter-form__label" for="eurodance">Евроденс</label>
+              </fieldset>
+            </li>
+            <li class="filter-form__item">
+              <fieldset class="filter-form__fieldset">
+                <legend class="filter-form__legend">
+                  <h3 class="filter-form__item-name">
+                    <a href="" class="filter-form__link">
+                      Еда
+                    </a>
+                  </h3>
+                </legend>
+              </fieldset>
+            </li>
+            <li class="filter-form__item transport">
+              <fieldset class="filter-form__fieldset">
+                <legend class="filter-form__legend">
+                  <h3 class="filter-form__item-name">
+                    <a href="" class="filter-form__link">
+                      Транспорт
+                    </a>
+                  </h3>
+                </legend>
+                <ul class="transport__list">
+                  <li class="transport__item transport__item--active">
+                    <label>
+                      <input type="checkbox" name="plane" value="" checked>
+                    </label>
+                  </li>
+                  <li class="transport__item transport__item--active">
+                    <label>
+                      <input type="checkbox" name="bus" value="" checked>
+                    </label>
+                  </li>
+                  <li class="transport__item">
+                    <label>
+                      <input type="checkbox" name="bike" value="">
+                    </label>
+                  </li>
+                  <li class="transport__item transport__item--active">
+                    <label>
+                      <input type="checkbox" name="legs" value="" checked>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </li>
+            <li class="filter-form__item">
+              <h3 class="filter-form__item-name">
+                <a href="" class="filter-form__link">
+                  Левел
+                </a>
+              </h3>
+              <input class="filter-form__input min-level" type="number" name="min-level" value="30">
+              <input class="filter-form__input max-level" type="number" name="max-level" value="100">
+              <input class="filter-form__input level-bar" type="range" name="level" value="">
+            </li>
+          </ul>
+          <button type="submit" name="show" class="filter-form__button button">
+            Показать
+          </button>
+        </form>
+      </section>
+      <section class="main__companions companions">
+        <ul class="companions__list">
+          <li class="companions__item companions__item--catalog user-card">
+            <div class="user-card__title">
+              <img src="" width="70" height="70" alt="Изображение попутчика">
+              <h3 class="user-card__name">
+                Таня Фирсова
+              </h3>
+              <div class="user-card__like user-card__like--liked like">
+                <p class="like__count">
+                  1.5M
+                </p>
+              </div>
+              <div class="user-card__hashtags hashtags">
+                <p class="hashtags__text">
+                  #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
+                </p>
+              </div>
+            </div>
+            <div class="user-card__info">
+              <div class="user-card__flags flags">
+                <h3 class="flags__title">
+                  Хочет посетить:
+                </h3>
+                <ul class="user-card__list flags__list">
+                  <li class="flags__item">
+                    <p class="flags__text">
+                      Шри-ланка
+                    </p>
+                  </li>
+                  <li class="flags__item">
+                    <p class="flags__text">
+                      Тайланд
+                    </p>
+                  </li>
+                  <li class="flags__item">
+                    <p class="flags__text">
+                      Сейшелы
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="user-card__transport transport">
+                <h3 class="transport__title">
+                  Транспорт:
+                </h3>
+                <ul class="user-card__list transport__list">
+                  <li class="transport__item transport__item--active">
+                    <label class="transport__label">
+                      <input class="transport__input" type="checkbox" name="plane" value="" checked>
+                    </label>
+                  </li>
+                  <li class="transport__item">
+                    <label class="transport__label">
+                      <input class="transport__input" type="checkbox" name="bus" value="">
+                    </label>
+                  </li>
+                  <li class="transport__item">
+                    <label class="transport__label">
+                      <input class="transport__input" type="checkbox" name="bike" value="">
+                    </label>
+                  </li>
+                  <li class="transport__item">
+                    <label class="transport__label">
+                      <input class="transport__input" type="checkbox" name="legs" value="">
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <div class="user-card__level user-level">
+                <h3 class="user-level__title">
+                  Левел:
+                </h3>
+                <div class="user-level__diagram progress">
+                  <div class="user-level__text level">
+                    <p class="level__value">
+                      99
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="user-card__button button">
+              Позвать!
+            </a>
+          </li>
+          <li class="companions__item companions__item--catalog user-card">
+            <div class="user-card__title">
+              <img src="" width="70" height="70" alt="Изображение попутчика">
+              <h3 class="user-card__name">
+                Петя Демин
+              </h3>
+              <div class="user-card__like like">
+                <p class="like__count">
+                  1500
+                </p>
+              </div>
+              <div class="user-card__hashtags hashtags">
+                <p class="hashtags__text">
+                  #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
+                </p>
+              </div>
+            </div>
+            <div class="user-card__info">
+              <div class="user-card__flags flags">
+                <h3 class="flags__title">
+                  Хочет посетить:
+                </h3>
+                <ul class="user-card__list flags__list">
+                  <li class="flags__item">
+                    <p class="flags__text">
+                      Бельгия
+                    </p>
+                  </li>
+                  <li class="flags__item">
+                    <p class="flags__text">
+                      Чехия
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="user-card__transport transport">
+                <h3 class="transport__title">
+                  Транспорт:
+                </h3>
+                <ul class="user-card__list transport__list">
+                  <li class="transport__item transport__item--active">
+                    <label class="transport__label">
+                      <input class="transport__input" type="checkbox" name="plane" value="" checked>
+                    </label>
+                  </li>
+                  <li class="transport__item transport__item--active">
+                    <label class="transport__label">
+                      <input class="transport__input" type="checkbox" name="bus" value="">
+                    </label>
+                  </li>
+                  <li class="transport__item">
+                    <label class="transport__label">
+                      <input class="transport__input" type="checkbox" name="bike" value="">
+                    </label>
+                  </li>
+                  <li class="transport__item transport__item--active">
+                    <label class="transport__label">
+                      <input class="transport__input" type="checkbox" name="legs" value="">
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <div class="user-card__level user-level">
+                <h3 class="user-level__title">
+                  Левел:
+                </h3>
+                <div class="user-level__diagram progress">
+                  <div class="user-level__text level">
+                    <p class="level__value">
+                      80
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="user-card__button button">
+              Позвать!
+            </a>
+          </li>
+          <li class="companions__item companions__item--catalog user-card">
+            <div class="user-card__title">
+              <img src="" width="70" height="70" alt="Изображение попутчика">
+              <h3 class="user-card__name">
+                Марк Смолов
+              </h3>
+              <div class="user-card__like like">
+                <p class="like__count">
+                  170
+                </p>
+              </div>
+              <div class="user-card__hashtags hashtags">
+                <p class="hashtags__text">
+                  #рэп #тату #хайпбист #кроссовки #суприм
+                </p>
+              </div>
+            </div>
+            <div class="user-card__info">
+              <div class="user-card__flags flags">
+                <h3 class="flags__title">
+                  Хочет посетить:
+                </h3>
+                <ul class="user-card__list flags__list">
+                  <li class="flags__item">
+                    <p class="flags__text">
+                      США
+                    </p>
+                  </li>
+                  <li class="flags__item">
+                    <p class="flags__text">
+                      Австралия
+                    </p>
+                  </li>
+                  <li class="flags__item">
+                    <p class="flags__text">
+                      Доминика
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="user-card__transport transport">
+                <h3 class="transport__title">
+                  Транспорт:
+                </h3>
+                <ul class="user-card__list transport__list">
+                  <li class="transport__item transport__item--active">
+                    <label class="transport__label">
+                      <input class="transport__input" type="checkbox" name="plane" value="" checked>
+                    </label>
+                  </li>
+                  <li class="transport__item">
+                    <label class="transport__label">
+                      <input class="transport__input" type="checkbox" name="bus" value="">
+                    </label>
+                  </li>
+                  <li class="transport__item transport__item--active">
+                    <label class="transport__label">
+                      <input class="transport__input" type="checkbox" name="bike" value="">
+                    </label>
+                  </li>
+                  <li class="transport__item">
+                    <label class="transport__label">
+                      <input class="transport__input" type="checkbox" name="legs" value="">
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <div class="user-card__level user-level">
+                <h3 class="user-level__title">
+                  Левел:
+                </h3>
+                <div class="user-level__diagram progress">
+                  <div class="user-level__text level">
+                    <p class="level__value">
+                      25
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="user-card__button button">
+              Позвать!
+            </a>
+          </li>
+          <li class="companions__item companions__item--catalog user-card">
+            <div class="user-card__title">
+              <img src="" width="70" height="70" alt="Изображение попутчика">
+              <h3 class="user-card__name">
+                Лариса Роговая
+              </h3>
+              <div class="user-card__like like">
+                <p class="like__count">
+                  23
+                </p>
+              </div>
+              <div class="user-card__hashtags hashtags">
+                <p class="hashtags__text">
+                  #образование #карьера #учеба #линкедин
+                </p>
+              </div>
+            </div>
+            <div class="user-card__info">
+              <div class="user-card__flags flags">
+                <h3 class="flags__title">
+                  Хочет посетить:
+                </h3>
+                <ul class="user-card__list flags__list">
+                  <li class="flags__item">
+                    <p class="flags__text">
+                      Великобритания
+                    </p>
+                  </li>
+                  <li class="flags__item">
+                    <p class="flags__text">
+                      Германия
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="user-card__transport transport">
+                <h3 class="transport__title">
+                  Транспорт:
+                </h3>
+                <ul class="user-card__list transport__list">
+                  <li class="transport__item transport__item--active">
+                    <label class="transport__label">
+                      <input class="transport__input" type="checkbox" name="plane" value="" checked>
+                    </label>
+                  </li>
+                  <li class="transport__item transport__item--active">
+                    <label class="transport__label">
+                      <input class="transport__input" type="checkbox" name="bus" value="">
+                    </label>
+                  </li>
+                  <li class="transport__item">
+                    <label class="transport__label">
+                      <input class="transport__input" type="checkbox" name="bike" value="">
+                    </label>
+                  </li>
+                  <li class="transport__item">
+                    <label class="transport__label">
+                      <input class="transport__input" type="checkbox" name="legs" value="">
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <div class="user-card__level user-level">
+                <h3 class="user-level__title">
+                  Левел:
+                </h3>
+                <div class="user-level__diagram progress">
+                  <div class="user-level__text level">
+                    <p class="level__value">
+                      50
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="user-card__button button">
+              Позвать!
+            </a>
+          </li>
+        </ul>
+        <div class="companions__controls">
+          <a href="#" class="companions__show-more">
+            + показать еще
+          </a>
+          <a href="" class="companions__button button prev-page">
+
+          </a>
+          <a href="" class="companions__button button next-page">
+
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page__footer footer">
+      <a class="footer__logo" href="#">
+        <img src="../source/img/logo-mobile-1.svg" width="100" height="15" alt="Логотип Погнали!">
+      </a>
+      <ul class="socials">
+        <li class="socials__item fb">
+
+        </li>
+        <li class="socials__item vk">
+
+        </li>
+        <li class="socials__item inst">
+
+        </li>
+      </ul>
+      <div class="footer__developed developed">
+        <p class="footer__text developed__text">
+          Разработано
+        </p>
+        <a class="footer__link developed__link" href="https://htmlacademy.ru/intensive/adaptive">
+
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
