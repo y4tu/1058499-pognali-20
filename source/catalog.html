@@ -6,16 +6,18 @@
   </head>
   <body class="page__body">
     <header class="page__header header">
-      <div class="header__menu menu menu--closed">
-        <h1 class="menu__title">Попутчики</h1>
-        <a class="menu__logo" href="#">
-          <img class="menu__logo-img" src="../source/img/logo-mobile-1.svg" width="100" height="15" alt="Логотип Погнали!">
+      <div class="header__menu">
+        <h1 class="header__title">
+          Попутчики
+        </h1>
+        <a class="header__logo" href="#">
+          <img class="header__logo-img" src="../source/img/logo-mobile-1.svg" width="100" height="15" alt="Логотип Погнали!">
         </a>
-        <button class="menu__button button" type="button" name="menu-burger"></button>
+        <button class="header__button button" type="button" name="header-burger"></button>
       </div>
 
-      <div class="header__menu menu">
-        <nav class="menu__nav nav">
+      <div class="header__content header__content--opened">
+        <nav class="header__nav nav">
           <ul class="nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a href="#">
@@ -34,10 +36,10 @@
             </li>
           </ul>
         </nav>
-        <a href="#" class="menu__auth auth-button button">
+        <a href="#" class="header__auth button">
           Авторизация
         </a>
-        <ul class="menu__contacts contacts">
+        <ul class="header__contacts contacts">
           <li class="contacts__item">
             <a href="tel:8 800 555-86-28" class="contacts__link contacts__link--tel">
               8 800 555-86-28
@@ -50,115 +52,137 @@
           </li>
         </ul>
         <ul class="socials">
-          <li class="socials__item fb">
-
+          <li class="socials__item socials__item--fb">
+            <a href="" aria-label="facebook" class="socials__link social-id">
+              <svg>
+              </svg>
+            </a>
           </li>
-          <li class="socials__item vk">
-
+          <li class="socials__item socials__item--vk">
+            <a href="#" aria-label="vkontakte" class="socials__link social-id">
+              <svg>
+              </svg>
+            </a>
           </li>
-          <li class="socials__item inst">
-
+          <li class="socials__item socials__item--inst">
+            <a href="#" aria-label="instagram" class="socials__link social-id">
+              <svg>
+              </svg>
+            </a>
           </li>
         </ul>
+        <button class="header__button header__button--opened button" type="button" name="header-cross"></button>
       </div>
     </header>
 
     <main class="page__main main">
       <section class="main__filter filter">
         <h2 class="filter__title countries-filter">
-          <a href="#" class="countries-filter__link-open">
             Фильтрация по странам
-          </a>
         </h2>
+        <button type="button" class="countries-filter__toggle">
+        </button>
         <h2 class="filter__title">
           Подберите идеального попутчика
         </h2>
-        <form class="filter__form filter-form" action="" method="get">
-          <ul class="filter-form__list">
-            <li class="filter-form__item">
-              <fieldset class="filter-form__fieldset">
-                <legend class="filter-form__legend">
-                  <h3 class="filter-form__item-name">
-                    <a href="" class="filter-form__link">
-                      Хобби
-                    </a>
-                  </h3>
-                </legend>
-              </fieldset>
+        <form class="filter__form" action="https://echo.htmlacademy.ru/" method="get">
+          <ul class="filter__list">
+            <li class="filter__item">
+              <div class="filter__header">
+                <h3 class="filter__item-name">
+                    Хобби
+                </h3>
+                <button type="button" class="filter__button">
+                </button>
+              </div>
+              <div class="filter__content">
+              </div>
             </li>
-            <li class="filter-form__item">
-              <fieldset class="filter-form__fieldset">
-                <legend class="filter-form__legend">
-                  <h3 class="filter-form__item-name">
-                    <a href="" class="filter-form__link">
-                      Музыка
-                    </a>
-                  </h3>
-                </legend>
-                  <input class="filter-form__input" type="checkbox" name="hard-rock" value="" id="hard-rock" checked>
-                  <label class="filter-form__label" for="hard-rock">Тяжелый рок</label>
-                  <input class="filter-form__input" type="checkbox" name="rus-rap" value="" id="rus-rap" checked>
-                  <label class="filter-form__label" for="rus-rap">Русский рэп</label>
-                  <input class="filter-form__input" type="checkbox" name="eurodance" value="" id="eurodance">
-                  <label class="filter-form__label" for="eurodance">Евроденс</label>
-              </fieldset>
+            <li class="filter__item">
+                  <div class="filter__header">
+                    <h3 class="filter__item-name">
+                        Музыка
+                    </h3>
+                    <button type="button" class="filter__button">
+                    </button>
+                  </div>
+                  <div class="filter__content">
+                    <button type="button" class="">
+                    </button>
+                    <input class="filter__input" type="checkbox" name="hard-rock" value="" id="hard-rock" checked>
+                    <label class="filter__label" for="hard-rock">Тяжелый рок</label>
+                    <input class="filter__input" type="checkbox" name="rus-rap" value="" id="rus-rap" checked>
+                    <label class="filter__label" for="rus-rap">Русский рэп</label>
+                    <input class="filter__input" type="checkbox" name="eurodance" value="" id="eurodance">
+                    <label class="filter__label" for="eurodance">Евроденс</label>
+                  </div>
             </li>
-            <li class="filter-form__item">
-              <fieldset class="filter-form__fieldset">
-                <legend class="filter-form__legend">
-                  <h3 class="filter-form__item-name">
-                    <a href="" class="filter-form__link">
-                      Еда
-                    </a>
-                  </h3>
-                </legend>
-              </fieldset>
+            <li class="filter__item">
+              <div class="filter__header">
+                <h3 class="filter__item-name">
+                    Еда
+                </h3>
+                <button type="button" class="filter__button">
+                </button>
+              </div>
+              <div class="filter__content">
+              </div>
             </li>
-            <li class="filter-form__item transport">
-              <fieldset class="filter-form__fieldset">
-                <legend class="filter-form__legend">
-                  <h3 class="filter-form__item-name">
-                    <a href="" class="filter-form__link">
-                      Транспорт
-                    </a>
-                  </h3>
-                </legend>
-                <ul class="transport__list">
-                  <li class="transport__item transport__item--active">
-                    <label>
-                      <input type="checkbox" name="plane" value="" checked>
+            <li class="filter__item">
+              <div class="filter__header">
+                <h3 class="filter__item-name">
+                  <a href="" class="filter__link">
+                    Транспорт
+                  </a>
+                </h3>
+              </div>
+              <div class="filter__content transport-check">
+                <ul class="transport-check__list">
+                  <li class="transport-check__item">
+                    <label class="transport-check__label">
+                      <input class="transport-check__checkbox" type="checkbox" name="plane" value="" aria-label="Самолет" checked>
                     </label>
                   </li>
-                  <li class="transport__item transport__item--active">
-                    <label>
-                      <input type="checkbox" name="bus" value="" checked>
+                  <li class="transport-check__item">
+                    <label class="transport-check__label">
+                      <input class="transport-check__checkbox" type="checkbox" name="bus" value="" aria-label="Автобус" checked>
                     </label>
                   </li>
-                  <li class="transport__item">
-                    <label>
-                      <input type="checkbox" name="bike" value="">
+                  <li class="transport-check__item">
+                    <label class="transport-check__label">
+                      <input class="transport-check__checkbox" type="checkbox" name="bike" value="" aria-label="Байк">
                     </label>
                   </li>
-                  <li class="transport__item transport__item--active">
-                    <label>
-                      <input type="checkbox" name="legs" value="" checked>
+                  <li class="transport-check__item">
+                    <label class="transport-check__label">
+                      <input class="transport-check__checkbox" type="checkbox" name="legs" value="" aria-label="Пешком" checked>
                     </label>
                   </li>
                 </ul>
-              </fieldset>
+              </div>
             </li>
-            <li class="filter-form__item">
-              <h3 class="filter-form__item-name">
-                <a href="" class="filter-form__link">
-                  Левел
-                </a>
-              </h3>
-              <input class="filter-form__input min-level" type="number" name="min-level" value="30">
-              <input class="filter-form__input max-level" type="number" name="max-level" value="100">
-              <input class="filter-form__input level-bar" type="range" name="level" value="">
+            <li class="filter__item">
+              <div class="filter__header">
+                <h3 class="filter__item-name">
+                    Левел
+                </h3>
+                <button type="button" class="filter__button">
+                </button>
+              </div>
+              <div class="filter__content">
+                <label for="">
+                  <input class="filter__input min-level" type="number" name="min-level" value="30">
+                </label>
+                <label for="">
+                  <input class="filter__input max-level" type="number" name="max-level" value="100">
+                </label>
+                <label for="">
+                  <input class="filter__input level-bar" type="range" name="level" value="">
+                </label>
+              </div>
             </li>
           </ul>
-          <button type="submit" name="show" class="filter-form__button button">
+          <button type="submit" name="show" class="filter__button button">
             Показать
           </button>
         </form>
@@ -177,9 +201,26 @@
                 </p>
               </div>
               <div class="user-card__hashtags hashtags">
-                <p class="hashtags__text">
-                  #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
-                </p>
+                <ul class="preview-card__text hashtags">
+                  <li class="hashtags__item">
+                    #ЗОЖ
+                  </li>
+                  <li class="hashtags__item">
+                    #ПП
+                  </li>
+                  <li class="hashtags__item">
+                    #Фитнес
+                  </li>
+                  <li class="hashtags__item">
+                    #пляж
+                  </li>
+                  <li class="hashtags__item">
+                    #авокадо
+                  </li>
+                  <li class="hashtags__item">
+                    #смузи
+                  </li>
+                </ul>
               </div>
             </div>
             <div class="user-card__info">
@@ -210,25 +251,13 @@
                   Транспорт:
                 </h3>
                 <ul class="user-card__list transport__list">
-                  <li class="transport__item transport__item--active">
-                    <label class="transport__label">
-                      <input class="transport__input" type="checkbox" name="plane" value="" checked>
-                    </label>
+                  <li class="transport__item transport__item--active transport__item--plane" aria-label="Самолет">
                   </li>
-                  <li class="transport__item">
-                    <label class="transport__label">
-                      <input class="transport__input" type="checkbox" name="bus" value="">
-                    </label>
+                  <li class="transport__item transport__item--bus" aria-label="Автобус">
                   </li>
-                  <li class="transport__item">
-                    <label class="transport__label">
-                      <input class="transport__input" type="checkbox" name="bike" value="">
-                    </label>
+                  <li class="transport__item transport__item--bike" aria-label="Байк">
                   </li>
-                  <li class="transport__item">
-                    <label class="transport__label">
-                      <input class="transport__input" type="checkbox" name="legs" value="">
-                    </label>
+                  <li class="transport__item transport__item--legs" aria-label="Пешком">
                   </li>
                 </ul>
               </div>
@@ -245,9 +274,9 @@
                 </div>
               </div>
             </div>
-            <a href="#" class="user-card__button button">
+            <button type="button" class="user-card__button button">
               Позвать!
-            </a>
+            </button>
           </li>
           <li class="companions__item companions__item--catalog user-card">
             <div class="user-card__title">
@@ -261,9 +290,23 @@
                 </p>
               </div>
               <div class="user-card__hashtags hashtags">
-                <p class="hashtags__text">
-                  #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
-                </p>
+                <ul class="preview-card__text hashtags">
+                  <li class="hashtags__item">
+                    #бургер
+                  </li>
+                  <li class="hashtags__item">
+                    #бар
+                  </li>
+                  <li class="hashtags__item">
+                    #футбол
+                  </li>
+                  <li class="hashtags__item">
+                    #концерт
+                  </li>
+                  <li class="hashtags__item">
+                    #крафт
+                  </li>
+                </ul>
               </div>
             </div>
             <div class="user-card__info">
@@ -289,25 +332,13 @@
                   Транспорт:
                 </h3>
                 <ul class="user-card__list transport__list">
-                  <li class="transport__item transport__item--active">
-                    <label class="transport__label">
-                      <input class="transport__input" type="checkbox" name="plane" value="" checked>
-                    </label>
+                  <li class="transport__item transport__item--active transport__item--plane" aria-label="Самолет">
                   </li>
-                  <li class="transport__item transport__item--active">
-                    <label class="transport__label">
-                      <input class="transport__input" type="checkbox" name="bus" value="">
-                    </label>
+                  <li class="transport__item transport__item--active transport__item--bus" aria-label="Автобус">
                   </li>
-                  <li class="transport__item">
-                    <label class="transport__label">
-                      <input class="transport__input" type="checkbox" name="bike" value="">
-                    </label>
+                  <li class="transport__item transport__item--bike" aria-label="Байк">
                   </li>
-                  <li class="transport__item transport__item--active">
-                    <label class="transport__label">
-                      <input class="transport__input" type="checkbox" name="legs" value="">
-                    </label>
+                  <li class="transport__item transport__item--active transport__item--legs" aria-label="Пешком">
                   </li>
                 </ul>
               </div>
@@ -324,9 +355,9 @@
                 </div>
               </div>
             </div>
-            <a href="#" class="user-card__button button">
-              Позвать!
-            </a>
+              <button type="button" class="user-card__button button">
+                Позвать!
+              </button>
           </li>
           <li class="companions__item companions__item--catalog user-card">
             <div class="user-card__title">
@@ -340,9 +371,23 @@
                 </p>
               </div>
               <div class="user-card__hashtags hashtags">
-                <p class="hashtags__text">
-                  #рэп #тату #хайпбист #кроссовки #суприм
-                </p>
+                <ul class="preview-card__text hashtags">
+                  <li class="hashtags__item">
+                    #рэп
+                  </li>
+                  <li class="hashtags__item">
+                    #тату
+                  </li>
+                  <li class="hashtags__item">
+                    #хайпбист
+                  </li>
+                  <li class="hashtags__item">
+                    #кроссовки
+                  </li>
+                  <li class="hashtags__item">
+                    #суприм
+                  </li>
+                </ul>
               </div>
             </div>
             <div class="user-card__info">
@@ -373,25 +418,13 @@
                   Транспорт:
                 </h3>
                 <ul class="user-card__list transport__list">
-                  <li class="transport__item transport__item--active">
-                    <label class="transport__label">
-                      <input class="transport__input" type="checkbox" name="plane" value="" checked>
-                    </label>
+                  <li class="transport__item transport__item--active transport__item--plane" aria-label="Самолет">
                   </li>
-                  <li class="transport__item">
-                    <label class="transport__label">
-                      <input class="transport__input" type="checkbox" name="bus" value="">
-                    </label>
+                  <li class="transport__item transport__item--bus" aria-label="Автобус">
                   </li>
-                  <li class="transport__item transport__item--active">
-                    <label class="transport__label">
-                      <input class="transport__input" type="checkbox" name="bike" value="">
-                    </label>
+                  <li class="transport__item transport__item--active transport__item--bike" aria-label="Байк">
                   </li>
-                  <li class="transport__item">
-                    <label class="transport__label">
-                      <input class="transport__input" type="checkbox" name="legs" value="">
-                    </label>
+                  <li class="transport__item transport__item--legs" aria-label="Пешком">
                   </li>
                 </ul>
               </div>
@@ -408,9 +441,9 @@
                 </div>
               </div>
             </div>
-            <a href="#" class="user-card__button button">
+            <button type="button" class="user-card__button button">
               Позвать!
-            </a>
+            </button>
           </li>
           <li class="companions__item companions__item--catalog user-card">
             <div class="user-card__title">
@@ -424,9 +457,20 @@
                 </p>
               </div>
               <div class="user-card__hashtags hashtags">
-                <p class="hashtags__text">
-                  #образование #карьера #учеба #линкедин
-                </p>
+                <ul class="preview-card__text hashtags">
+                  <li class="hashtags__item">
+                    #образование
+                  </li>
+                  <li class="hashtags__item">
+                    #карьера
+                  </li>
+                  <li class="hashtags__item">
+                    #учеба
+                  </li>
+                  <li class="hashtags__item">
+                    #линкедин
+                  </li>
+                </ul>
               </div>
             </div>
             <div class="user-card__info">
@@ -452,25 +496,13 @@
                   Транспорт:
                 </h3>
                 <ul class="user-card__list transport__list">
-                  <li class="transport__item transport__item--active">
-                    <label class="transport__label">
-                      <input class="transport__input" type="checkbox" name="plane" value="" checked>
-                    </label>
+                  <li class="transport__item transport__item--active transport__item--plane" aria-label="Самолет">
                   </li>
-                  <li class="transport__item transport__item--active">
-                    <label class="transport__label">
-                      <input class="transport__input" type="checkbox" name="bus" value="">
-                    </label>
+                  <li class="transport__item transport__item--active transport__item--bus" aria-label="Автобус">
                   </li>
-                  <li class="transport__item">
-                    <label class="transport__label">
-                      <input class="transport__input" type="checkbox" name="bike" value="">
-                    </label>
+                  <li class="transport__item transport__item--bike" aria-label="Байк">
                   </li>
-                  <li class="transport__item">
-                    <label class="transport__label">
-                      <input class="transport__input" type="checkbox" name="legs" value="">
-                    </label>
+                  <li class="transport__item transport__item--legs" aria-label="Пешком">
                   </li>
                 </ul>
               </div>
@@ -487,20 +519,18 @@
                 </div>
               </div>
             </div>
-            <a href="#" class="user-card__button button">
+            <button type="button" class="user-card__button button">
               Позвать!
-            </a>
+            </button>
           </li>
         </ul>
         <div class="companions__controls">
           <a href="#" class="companions__show-more">
             + показать еще
           </a>
-          <a href="" class="companions__button button prev-page">
-
+          <a href="" class="companions__button button companions__button--prev">
           </a>
-          <a href="" class="companions__button button next-page">
-
+          <a href="" class="companions__button button companions__button--next">
           </a>
         </div>
       </section>
@@ -511,22 +541,30 @@
         <img src="../source/img/logo-mobile-1.svg" width="100" height="15" alt="Логотип Погнали!">
       </a>
       <ul class="socials">
-        <li class="socials__item fb">
-
+        <li class="socials__item socials__item--fb">
+          <a href="" class="socials__link social-id">
+            <svg>
+            </svg>
+          </a>
         </li>
-        <li class="socials__item vk">
-
+        <li class="socials__item socials__item--vk">
+          <a href="#" aria-label="vkontakte" class="socials__link social-id">
+            <svg>
+            </svg>
+          </a>
         </li>
-        <li class="socials__item inst">
-
+        <li class="socials__item socials__item--inst">
+          <a href="#" aria-label="instagram" class="socials__link social-id">
+            <svg>
+            </svg>
+          </a>
         </li>
       </ul>
-      <div class="footer__developed developed">
-        <p class="footer__text developed__text">
+      <div class="footer__developed">
+        <p class="footer__text">
           Разработано
         </p>
-        <a class="footer__link developed__link" href="https://htmlacademy.ru/intensive/adaptive">
-
+        <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive">
         </a>
       </div>
     </footer>
